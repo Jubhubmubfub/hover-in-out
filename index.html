@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Hover In/Out</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        var x = 2;
+        $('img').hover(function(){
+          var a = $(this).attr('data-alt-src');
+          var b = $(this).attr('data-alt1-src');
+
+          if(x%2===0){
+            $(this).attr('src',a);
+            x++;
+          }
+          else if (x%2===1) {
+            $(this).attr('src',b);
+            x++;
+          }
+        });//end of ('img').hover
+      });//end of document.ready
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <img src="images/jon_square.png" data-alt-src="images/ford_square.png" data-alt1-src="images/jon_square.png" alt="jon snow">
+      <img src="images/john_square.jpg" data-alt-src="images/matt_square.jpg" data-alt1-src="images/john_square.jpg" alt="john boyega">
+      <img src="images/michelle_square.png" data-alt-src="images/rami_square.png" data-alt1-src="images/michelle_square.png" alt="michelle obama">
+      <img src="images/saul_square.jpg" data-alt-src="images/curry_square.png" data-alt1-src="images/saul_square.jpg" alt="saul goodman">
+    </div>
+  </body>
+</html>

@@ -1,0 +1,19 @@
+* {
+  padding:0px;
+  margin:0px;
+}
+
+.wrapper {
+  width:970px;
+  height:1000px;
+  /*background:coral;*/
+  text-align: center;
+}
+
+.wrapper img {
+  width:200px;
+  height:200px;
+  box-shadow:2px 2px 2px black;
+  border-radius:10px;
+  margin:20px 10px;
+}
